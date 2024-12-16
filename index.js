@@ -42,7 +42,7 @@ document.querySelector('.trigger').addEventListener('click', () => {
   compareRecentPrompt(recentPrompt);
 });
 
-function compareRecentPrompt(recentPrompt) {
+function compareRecentPrompt(recentPrompt, e) {
   //Data Norminalization
   let mleS;
 
@@ -66,6 +66,7 @@ function compareRecentPrompt(recentPrompt) {
   
   //Respo AI giving a responses
   document.querySelector('.response').innerHTML = response;
+  e.prevent(default);
 }
 
 
