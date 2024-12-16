@@ -53,7 +53,7 @@ function compareRecentPrompt(recentPrompt) {
   
   //Display if can't process
   if(!mleS) {
-    response = "Sorry, i haven't learned how to process that ";
+    response = "Sorry, i haven't learned how to process that";
   } else {
     let seenPrompt = mleS.reply;
     let random = Math.floor(Math.random() * seenPrompt.length);
