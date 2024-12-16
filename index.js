@@ -65,7 +65,7 @@ function compareRecentPrompt(recentPrompt) {
   }
   
   //Respo AI giving a responses
-  alert(response);
+  document.querySelector('.response').innerHTML = response;
 }
 
 
