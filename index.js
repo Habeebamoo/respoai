@@ -1,5 +1,9 @@
 import { mle } from "./ML/machine-learning-engine.js";
 
+window.addEventListener('load', () => {
+  document.querySelector('.loader').style.display = 'none';
+})
+
 /*
 Algorithms for Respo AI
 
