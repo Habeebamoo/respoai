@@ -1,9 +1,7 @@
 import { mle } from "./ML/machine-learning-engine.js";
 
-alert(mle.length)
-
 /*
-Algorithms for GenO AI
+Algorithms for Respo AI
 
 1. get the users input
 2. save the users input
@@ -51,17 +49,18 @@ function compareRecentPrompt(recentPrompt) {
     };
   });
 
+  let response = '';
+  
   //Display if can't process
   if(!mleS) {
-    alert("Sorry, i haven't learned how to process that ")
+    response = "Sorry, i haven't learned how to process that ";
+  } else {
+    let seenPrompt = mleS.reply;
+    let random = Math.floor(Math.random() * seenPrompt.length);
+    response = seenPrompt[random].replyWord;
   }
-
-  //Loop throught the responses
-  let seenPrompt = mleS.reply;
-  let random = Math.floor(Math.random() * seenPrompt.length);
-  let response = seenPrompt[random].replyWord;
-
-  //GenO giving a responses
+  
+  //Respo AI giving a responses
   alert(response);
 }
 
