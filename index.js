@@ -63,30 +63,3 @@ function compareRecentPrompt(recentPrompt) {
   //Respo AI giving a responses
   document.querySelector('.response').innerHTML = response;
 }
-
-  
-// Register the service worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js')
-    .then(registration => {
-      console.log('Service worker registered:', registration);
-    })
-    .catch(error => {
-      console.error('Service worker registration failed:', error);
-    });
-}
-
-// Load cached scripts
-caches.open('my-cache').then(cache => {
-  cache.keys().then(keys => {
-    keys.forEach(key => {
-      cache.match(key).then(response => {
-        if (response) {
-          console.log(`Loaded cached script: ${key.url}`);
-        }
-      });
-    });
-  });
-});
-
-
