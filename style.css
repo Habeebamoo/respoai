@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.response {
+  width: 95%;
+  margin: 0 auto;
+  animation: response .5s;
+}
+
+@keyframes response {
+  from {font-size: 5px}
+  to {font-size: auto}
+}
+
+.row {
+  background: purple;
+}
