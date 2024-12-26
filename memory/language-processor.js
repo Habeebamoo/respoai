@@ -13,7 +13,7 @@ if(now.getHours() < 12) {
 
 export const neurons = [
   {
-    input: ['hello', 'hi', 'hey', 'how far', 'howfar', 'hafar', 'awfa', 'awfar', 'afar', 'hey man'],
+    input: ['hello', 'hi', 'hey', 'how far', 'howfar', 'hafar', 'awfa', 'awfar', 'afar', 'sup', 'howdy', 'yo', "what's up", 'wassup', 'wasup'],
     output: ['Hi there!', 'How may i be of help', 'Hi, What can i help you with', 'Hey there!, how may i be of help', "I'am good, you?", 'Am active', 'Good how may i be of service', 'Good, anything?']
   }, {
     input: ['how are you', 'how are you doing'],
@@ -49,3 +49,9 @@ export const neurons = [
     output: ['Goodbye! see you soon', 'See you soon!', 'Take care!']
   }      
 ]
+
+export function evalute(prompt) {
+  const response = eval(prompt);
+  return response;
+}
+  
