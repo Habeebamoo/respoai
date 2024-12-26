@@ -2,7 +2,7 @@ const today = new Date();
 
 export const neurons = [
   {
-    input: ['hello', 'Hello', 'hi', 'Hi', 'hey', 'Hey', 'how far', 'How far', 'howfar', 'Howfar', 'hafar', 'Hafar', 'awfa', 'Awfa', 'awfar', 'Awfar', 'afar', 'Afar', 'hey man', 'Hey man'],
+    input: ['hello', 'hi', 'Hi', 'hey', 'Hey', 'how far', 'How far', 'howfar', 'Howfar', 'hafar', 'Hafar', 'awfa', 'Awfa', 'awfar', 'Awfar', 'afar', 'Afar', 'hey man', 'Hey man'],
     output: ['Hi there!', 'How may i be of help', 'Hi, What can i help you with', 'Hey there!, how may i be of help', "I'am good, you?", 'Am active', 'Good how may i be of service', 'Good, anything?']
   }, {
     input: ['how are you', 'How are you', 'how are you doing', 'How are you doing'],
