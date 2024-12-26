@@ -30,6 +30,6 @@ export const neurons = [
     ]
   }, {
     input: ['what is the time'],
-    output: [`${now}`]
+    output: [`now`]
   }
 ]
