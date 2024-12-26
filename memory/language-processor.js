@@ -1,21 +1,5 @@
-export function getTimeStage() {
-  const day = new Date();
-  const hour = day.getHours();
-
-  let timeStage = '';
-
-  if(hour > 0 && hour <= 11) {
-    timeStage = 'morning';
-  } else if (hour > 11 && hour <= 16) {
-    timeStage = 'afternoon';
-  } else if (hour > 16 && hour <= 19) {
-    timeStage = 'evening';
-  } else if (hour > 19 && hour <= 24) {
-    timeStage = 'night';
-  }
-
-  return timeStage;
-}
+const today = new Date();
+const now = today.toLocaleString();
 
 export const neurons = [
   {
@@ -46,11 +30,6 @@ export const neurons = [
     ]
   }, {
     input: ['what is the time'],
-    output: [
-      `function () {
-      const now = new Date();
-      return now.toLocaleString();
-      }`
-    ]
+    output: [`${now}`]
   }
 ]
