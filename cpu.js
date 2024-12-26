@@ -26,16 +26,16 @@ let aiResponse = '';
 function generateResponse(prompt) {
   let structuredData;
 
+  myNumbers.forEach((nums) => {
+    if(prompt.includes(nums)) {
+      alert('hello');
+    } 
+  });
+
   neurons.forEach((neuron) => {
     let userInputs = neuron.input;
 
-    userInputs.forEach((userInput) => {
-      myNumbers.forEach((nums) => {
-        if(prompt.includes(nums)) {
-          aiResponse = eval(prompt);
-        } 
-      });
-      
+    userInputs.forEach((userInput) => {      
       if(prompt.includes(userInput)) {
         structuredData = neuron;
       };
