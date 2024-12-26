@@ -35,7 +35,7 @@ export const neurons = [
       `My name is Respo AI, i was built by <pre>Dev. Habeeb O. Amoo</pre> to respond to humans chat <p>though i am not highly sophisticated like other AI but i was built in a complex system.</p>My main process is to use Natural Language Processing (NLP) to understand your message and then use Data structuring to give you a reply just like normal humans do. NLP represents your native language while data structuring is just all what you've learnt.<pre>so does this answers your questions?</pre>`
     ]
   }, {
-    input: ['what is the time', 'what is time', 'what does the time say', "what say's the time", "what's the time", 'what time is it'],
+    input: ['what is the time', 'what is time', 'what does the time say', "what does the time say's", "what say's the time", 'what says the time', "what's the time", 'what time is it'],
     output: [`The time is ${now.getHours()}:${now.getMinutes()}${meridian}`]
   }
 ]
