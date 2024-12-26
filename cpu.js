@@ -28,7 +28,7 @@ function generateResponse(prompt) {
 
   myNumbers.forEach((nums) => {
     if(prompt.includes(nums)) {
-      alert('hello');
+      aiResponse = eval(prompt);
     } 
   });
 
