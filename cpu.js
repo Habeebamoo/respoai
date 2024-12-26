@@ -20,6 +20,9 @@ function windowRunCommand(event, prompt) {
   }
 }
 
+const myNumbers = [0,1,2,3,4,5,6,7,8,9];
+const aiResponse = '';
+
 function generateResponse(prompt) {
   let structuredData;
 
@@ -27,6 +30,11 @@ function generateResponse(prompt) {
     let userInputs = neuron.input;
 
     userInputs.forEach((userInput) => {
+      myNumbers.forEach((nums) => {
+        if(prompt.includes(nums) {
+          aiResponse = eval(prompt);
+        } 
+      })
       if(prompt.includes(userInput)) {
         structuredData = neuron;
       };
@@ -37,6 +45,7 @@ function generateResponse(prompt) {
           output: ["Sorry i'cant process that", "Sorry i haven't learnt that word yet"]
         }
       };
+      
     })
   });
 
@@ -47,7 +56,7 @@ const dataStructure = JSON.parse(localStorage.getItem('strdata'));
 const targetOutput = dataStructure.output;
 
 const random = Math.floor(Math.random() * targetOutput.length);
-const aiResponse = targetOutput[random];
+aiResponse = targetOutput[random];
 
 if(aiResponse) {
   document.querySelector('.response').innerHTML = aiResponse;
