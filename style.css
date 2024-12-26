@@ -7,6 +7,15 @@ body {
   position: fixed;
   top: 5px;
   right: 5px;
+  color: white;
+}
+
+.menu button {
+  background: purple;
+}
+
+.menu ul {
+  background: purple;
 }
 
 .response {
