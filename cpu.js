@@ -29,7 +29,11 @@ function generateResponse(prompt) {
   myNumbers.forEach((nums) => {
     if(prompt.includes(nums)) {
       let ans = eval(prompt);
-      aiResponse = ans;
+      
+      structuredData = {
+        input: [],
+        output: [`The answer is ${ans}`]
+      }
     } 
   });
 
