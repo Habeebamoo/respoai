@@ -46,9 +46,11 @@ export const neurons = [
     ]
   }, {
     input: ['what is the time'],
-    output: function() {
+    output: [
+      `function () {
       const now = new Date();
       return now.toLocaleString();
-    }
+      }`
+    ]
   }
 ]
