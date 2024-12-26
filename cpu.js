@@ -32,7 +32,7 @@ function generateResponse(prompt) {
       
       structuredData = {
         input: [],
-        output: [`The answer is ${ans}`]
+        output: [`The answer is ${ans.toLocaleString()}`]
       }
     } 
   });
