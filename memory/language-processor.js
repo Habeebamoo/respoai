@@ -49,9 +49,4 @@ export const neurons = [
     output: ['Goodbye! see you soon', 'See you soon!', 'Take care!']
   }      
 ]
-
-export function evalute(prompt) {
-  const response = eval(prompt);
-  return response;
-}
   
