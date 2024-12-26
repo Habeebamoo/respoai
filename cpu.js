@@ -1,4 +1,4 @@
-import { neurons, getTimeStage} from "./memory/language-processor.js";
+import { neurons } from "./memory/language-processor.js";
 
 document.querySelector('.trigger').addEventListener('click', () => {
   runCommand();
