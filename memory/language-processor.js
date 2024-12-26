@@ -5,9 +5,10 @@ let hours = now.getHours();
 let minutes = now.getMinutes();
 
 if(now.getHours() < 12) {
-  meridian = 'AM';
+  meridian = 'AM'
 } else {
   meridian = 'PM';
+  hours -= 12;
 };
 
 export const neurons = [
