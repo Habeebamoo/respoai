@@ -1,4 +1,11 @@
-const today = new Date();
+const now = new Date();
+const meridian = '';
+
+if(now.getHours() < 12) {
+  meridian = 'AM';
+} else {
+  meridian = 'PM';
+}
 
 export const neurons = [
   {
@@ -29,6 +36,6 @@ export const neurons = [
     ]
   }, {
     input: ['what is the time', 'what is time', 'what does the time say', "what say's the time", "what's the time", 'what time is it',],
-    output: [`${today.toLocaleString()}`]
+    output: [`The time is ${now.getHours()}:${now.getMinutes()}${meridian}`]
   }
 ]
