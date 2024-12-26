@@ -44,5 +44,9 @@ export const neurons = [
     output: [
       `My name is Respo AI, i was built by <pre>Dev. Habeeb O. Amoo</pre> to respond to humans chat <p>though i am not highly sophisticated like other AI but i was built in a complex system.</p>My main process is to use Natural Language Processing (NLP) to understand your message and then use Data structuring to give you a reply just like normal humans do. NLP represents your native language while data structuring is just all what you've learnt.<pre>so does this answers your questions?</pre>`
     ]
-  }
+  }, {
+    input: ['what is the time'],
+    output: function() {
+      const now = new Date();
+      return now.toLocaleString();
 ]
