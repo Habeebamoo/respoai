@@ -1,5 +1,5 @@
 const now = new Date();
-const meridian = '';
+let meridian = '';
 
 if(now.getHours() < 12) {
   meridian = 'AM';
