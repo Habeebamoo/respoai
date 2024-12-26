@@ -1,6 +1,9 @@
 const now = new Date();
 let meridian = '';
 
+let hours = now.getHours();
+let minutes = now.getMinutes();
+
 if(now.getHours() < 12) {
   meridian = 'AM';
 } else {
@@ -36,7 +39,7 @@ export const neurons = [
     ]
   }, {
     input: ['what is the time', 'what is time', 'what does the time say', "what does the time say's", "what say's the time", 'what says the time', "what's the time", 'what time is it'],
-    output: [`The time says ${now.getHours()}:${now.getMinutes()}${meridian}`, `The time is ${now.getHours()}:${now.getMinutes()}${meridian}`, `${now.getHours()}:${now.getMinutes()}${meridian} says the time`]
+    output: [`The time says ${hours}:${minutes}${meridian}`, `The time is ${hours}:${minutes}${meridian}`, `${hours}:${minutes}${meridian} says the time`]
   }, {
     input: ['tell me a fact', 'suprise me with something interesting', 'tell me something interesting', 'suprise me'],
     output: ["Did you know that honey never spoils?", "Octopuses have three hearts!", "Bananas are berries, but strawberries aren’t."]
