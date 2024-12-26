@@ -5,8 +5,8 @@ document.querySelector('.trigger').addEventListener('click', () => {
 });
 
 function runCommand() {
-  const promptIn = document.querySelector('.prompt');
-  const prompt = promptIn.value;
+  const promptIn = document.querySelector('.prompt').value;
+  const prompt = promptIn.toLowerCase();
 
   generateResponse(prompt);
   windowRunCommand(prompt);
