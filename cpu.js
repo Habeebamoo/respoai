@@ -31,10 +31,11 @@ function generateResponse(prompt) {
 
     userInputs.forEach((userInput) => {
       myNumbers.forEach((nums) => {
-        if(prompt.includes(nums) {
+        if(prompt.includes(nums)) {
           aiResponse = eval(prompt);
         } 
-      })
+      });
+      
       if(prompt.includes(userInput)) {
         structuredData = neuron;
       };
