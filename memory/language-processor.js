@@ -1,6 +1,3 @@
-const today = new Date();
-const now = today.toLocaleString();
-
 export const neurons = [
   {
     input: ['hello', 'Hello', 'hi', 'Hi', 'hey', 'Hey', 'how far', 'How far', 'howfar', 'Howfar', 'hafar', 'Hafar', 'awfa', 'Awfa', 'awfar', 'Awfar', 'afar', 'Afar', 'hey man', 'Hey man'],
