@@ -49,4 +49,6 @@ export const neurons = [
     output: function() {
       const now = new Date();
       return now.toLocaleString();
+    }
+  }
 ]
