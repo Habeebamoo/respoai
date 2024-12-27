@@ -73,9 +73,9 @@ document.querySelector('.clear').addEventListener('click', () => {
   document.querySelector('.response').innerHTML = 'I am Respo AI';
 });
 
-/*window.addEventListener('unload', () => {
+window.addEventListener('unload', () => {
   localStorage.removeItem('strdata');
-})*/
+})
 
  
 
