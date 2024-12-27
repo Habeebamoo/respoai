@@ -48,7 +48,7 @@ export const neurons = [
     input: ['bye', 'later', 'see you soon', 'take care'],
     output: ['Goodbye! see you soon', 'See you soon!', 'Take care!']
   }, {
-    input: ['thanks', 'thanks'],
+    input: ['thank', 'thanks'],
     output: ["It's my pleasure helping you", "You are welcome, i am always here to assist you", "Don't say it, i am built to assist you!"]
   }
 ]
