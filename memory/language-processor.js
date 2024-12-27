@@ -42,11 +42,14 @@ export const neurons = [
     input: ['what is the time', 'time', 'what is time', 'what does the time say', "what does the time say's", "what say's the time", 'what says the time', "what's the time", 'what time is it'],
     output: [`The time says ${hours}:${minutes}${meridian}`, `The time is ${hours}:${minutes}${meridian}`, `${hours}:${minutes}${meridian} says the time`]
   }, {
-    input: ['tell me a fact', 'suprise me with something interesting', 'tell me something interesting', 'suprise me'],
+    input: ['fact', 'tell me a fact', 'suprise me with something interesting', 'tell me something interesting', 'suprise me'],
     output: ["Did you know that honey never spoils?", "Octopuses have three hearts!", "Bananas are berries, but strawberries aren’t."]
   }, {
     input: ['bye', 'later', 'see you soon', 'take care'],
     output: ['Goodbye! see you soon', 'See you soon!', 'Take care!']
-  }      
+  }, {
+    input: ['thanks', 'thanks'],
+    output: ["It's my pleasure helping you", "You are welcome, i am always here to assist you", "Don't say it, i am built to assist you!"]
+  }
 ]
   
