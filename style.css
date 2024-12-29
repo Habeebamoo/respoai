@@ -11,14 +11,6 @@ body {
   background: purple;
 }
 
-.menu button {
-  background: purple;
-}
-
-.menu ul {
-  background: purple;
-}
-
 .response {
   position: fixed;
   top: 50px;
