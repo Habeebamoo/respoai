@@ -17,10 +17,15 @@ body {
   right: 5px;
 }
 
-.menu-link {
+.menu-link a {
   text-decoration: none;
   font-weight: bold;
   display: block;
+  color: purple;
+}
+
+.menu-link a:hover {
+  background: #eee;
 }
 
 .response {
