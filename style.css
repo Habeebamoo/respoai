@@ -17,6 +17,12 @@ body {
   right: 5px;
 }
 
+.menu-link {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
 .response {
   position: fixed;
   top: 50px;
