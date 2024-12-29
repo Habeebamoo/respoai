@@ -17,14 +17,14 @@ body {
   right: 5px;
 }
 
-.menu-link a {
+.menu-link {
   text-decoration: none;
   font-weight: bold;
   display: block;
   color: purple;
 }
 
-.menu-link a:hover {
+.menu-link:hover {
   background: #eee;
 }
 
