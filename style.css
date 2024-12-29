@@ -3,15 +3,18 @@ body {
   padding: 0;
 }
 
-.menu {
-  position: fixed;
-  top: 5px;
-  right: 5px;
+.primary-btn {
   color: white;
   background: purple;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+}
+
+.menu {
+  position: fixed;
+  top: 5px;
+  right: 5px;
 }
 
 .response {
