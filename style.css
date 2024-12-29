@@ -9,6 +9,9 @@ body {
   right: 5px;
   color: white;
   background: purple;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 .response {
