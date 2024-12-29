@@ -68,11 +68,6 @@ if(aiResponse) {
   document.querySelector('.response').innerHTML = aiResponse;
 }
 
-document.querySelector('.clear').addEventListener('click', () => {
-  localStorage.removeItem('strdata');
-  document.querySelector('.response').innerHTML = 'I am Respo AI';
-});
-
 window.addEventListener('unload', () => {
   localStorage.removeItem('strdata');
 })
