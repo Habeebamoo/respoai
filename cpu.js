@@ -68,10 +68,10 @@ if(aiResponse) {
   document.querySelector('.response').innerHTML = aiResponse;
 }
 
-window.addEventListener('unload', () => {
+/*window.addEventListener('unload', () => {
   localStorage.removeItem('strdata');
 })
-
+*/
  
 
 
