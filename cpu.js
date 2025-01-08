@@ -11,7 +11,7 @@ if(now.getHours() < 12) {
   hours -= 12;
 };
 
-export const neurons = [
+const neurons = [
   {
     input: ['hello', 'hi', 'hey', 'how far', 'howfar', 'hafar', 'awfa', 'awfar', 'afar', 'sup', 'howdy', 'yo', "what's up", 'wassup', 'wasup', 'whatsup'],
     output: ['Hi there!', 'How may i be of help', 'Hi, What can i help you with', 'Hey there!, how may i be of help', "I'am good, you?", 'Am active', 'Good how may i be of service', 'Good, anything?']
@@ -53,9 +53,9 @@ export const neurons = [
   }
 ];
 
-document.querySelector('.trigger').addEventListener('click', () => {
-  runCommand();
-});
+// document.querySelector('.trigger').addEventListener('click', () => {
+//   runCommand();
+// });
 
 let prompt = '';
 
