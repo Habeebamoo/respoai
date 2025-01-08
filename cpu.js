@@ -4,21 +4,20 @@ document.querySelector('.trigger').addEventListener('click', () => {
   runCommand();
 });
 
+let prompt = '';
+
 function runCommand() {
   const promptIn = document.querySelector('.prompt').value;
-  const prompt = promptIn.toLowerCase();
+  prompt = promptIn.toLowerCase();
 
   generateResponse(prompt);
-  windowRunCommand(prompt);
 }
 
-function windowRunCommand(event, prompt) {
-  if(prompt) {
-    if(event.key === 'Enter') {
-      runCommand();
-    }
+window.addEventListener('keypress', (event) => {
+  if(event.key === 'Enter') {
+    runCommand(prompt);
   }
-}
+})
 
 const myNumbers = [0,1,2,3,4,5,6,7,8,9];
 let aiResponse = '';
