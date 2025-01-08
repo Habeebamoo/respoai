@@ -1,3 +1,4 @@
+/* General reset and layout */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -6,8 +7,55 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f7f7f7;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Button container */
+.toggle-button {
+    position: relative;
+    width: 80px;  /* Decrease the width */
+    height: 40px; /* Decrease the height */
+    background: linear-gradient(45deg, #6e7fdb, #46b6ff);
+    border-radius: 20px;  /* Decrease border-radius */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider (the round knob) */
+.toggle-button:before {
+    content: '';
+    position: absolute;
+    top: 5px;       /* Adjust the top margin */
+    left: 5px;      /* Adjust the left margin */
+    width: 30px;    /* Decrease the width of the knob */
+    height: 30px;   /* Decrease the height of the knob */
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Active state styles */
+.toggle-button.active {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+.toggle-button.active:before {
+    transform: translateX(40px); /* Adjust the distance the knob slides */
+}
+
+/* Body light & dark theme */
+.light-theme {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
 
 .primary-btn {
   color: white;
@@ -40,56 +88,4 @@ body {
   background: purple;
 }
 
-.toggle-button {
-    position: relative;
-    width: 120px;
-    height: 60px;
-    background: linear-gradient(45deg, #6e7fdb, #46b6ff);
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.toggle-button:before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Active state styles */
-.toggle-button.active {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-}
-
-.toggle-button.active:before {
-    transform: translateX(60px);
-}
-
-/* Body light & dark theme */
-.light-theme {
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-.dark-theme {
-    background-color: #2f2f2f;
-    color: #fff;
-}
-
-/* Optional: Smooth transition for body background change */
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Switch active state (dark mode) */
-.toggle-container.active {
-    background-color: #333;
-}
