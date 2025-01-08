@@ -68,8 +68,7 @@ if(aiResponse) {
   document.querySelector('.response').innerHTML = aiResponse;
 }
 
-const themeCheckbox = document.getElementById('themeCheckbox');
-const themeToggle = document.getElementById('themeToggle');
+const toggleButton = document.getElementById('themeToggle');
 const body = document.body;
 
 // Functions to run on toggle
@@ -85,16 +84,16 @@ function enableLightMode() {
     body.classList.add('light-theme');
 }
 
-// Toggle theme based on checkbox
-themeCheckbox.addEventListener('change', function() {
-    if (themeCheckbox.checked) {
-        themeToggle.classList.add('active');
+// Toggle theme based on button state
+toggleButton.addEventListener('click', () => {
+    toggleButton.classList.toggle('active');
+    if (toggleButton.classList.contains('active')) {
         enableDarkMode();
     } else {
-        themeToggle.classList.remove('active');
         enableLightMode();
     }
 });
+
 
 
 
