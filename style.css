@@ -17,17 +17,6 @@ body {
   right: 5px;
 }
 
-.menu-link {
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  color: purple;
-}
-
-.menu-link:hover {
-  background: #eee;
-}
-
 .response {
   position: fixed;
   top: 50px;
@@ -50,8 +39,8 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 6.25em;
-  height: 3.125em;
+  width: 4.25em;
+  height: 2.125em;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
   background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
   background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
@@ -68,8 +57,8 @@ body {
 
 .theme-checkbox::before {
   content: "";
-  width: 2.25em;
-  height: 2.25em;
+  width: 1.25em;
+  height: 1.25em;
   position: absolute;
   top: 0.438em;
   left: 0.438em;
