@@ -13,7 +13,9 @@ function runCommand() {
     } else {
       generateResponse(prompt);
     }
-  })
+  });
+
+  document.querySelector('.prompt').value = '';
 }
 
 window.addEventListener('keypress', (event) => {
