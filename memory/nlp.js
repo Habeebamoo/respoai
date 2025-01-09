@@ -23,7 +23,7 @@ export const neurons = [
   }, {
     input: ['what are you', 'who are you', 'what is your name', 'who created you', 'who made you', 'who is your creator', 'who invented you', 'who is your inventor', "what's your name"],
     output: [
-      `My name is Respo AI, i was built by <pre>Dev. Habeeb O. Amoo</pre> to respond to humans chat <p>though i am not highly sophisticated like other AI but i was built in a complex system.</p>My main process is to use Natural Language Processing (NLP) to understand your message and then use Data structuring to give you a reply just like normal humans do. NLP represents your native language while data structuring is just all what you've learnt.<pre>so does this answers your questions?</pre>`
+      `My name is Respo AI, i was built by <pre>Dev. Habeeb O. Amoo</pre> to respond to humans chat <p>though i am not highly sophisticated like other AI but i was built in a complex system.</p>My main process is to use Natural Language Processing (NLP) to understand your message and then use Data structuring to give you a reply just like normal humans do. NLP represents your native language while data structuring is just all what you've learnt.<small>so does this answers your questions?</small>`
     ]
   }, {
     input: ['what is the time', 'time', 'what is time', 'what does the time say', "what does the time say's", "what say's the time", 'what says the time', "what's the time", 'what time is it'],
