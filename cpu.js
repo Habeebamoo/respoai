@@ -59,7 +59,7 @@ function generateResponse(prompt) {
   const response = targetOutput[random];
 
   addMessage(prompt, response);
-  setTimeout(() => addMessage('Hello! How can I assist you?', 'bot-message'), 500);  
+  setTimeout(() => addMessage(response, 'bot-message'), 500);  
 }
 
 function solve(prompt) {
@@ -76,8 +76,8 @@ function solve(prompt) {
   });
 
   const result = eval(memory);
-  addMessage(prompt, ` The answer is ${result}`)
-  setTimeout(() => addMessage('Hello! How can I assist you?', 'bot-message'), 500);  
+  addMessage(prompt)
+  setTimeout(() => addMessage(` The answer is ${result}`, 'bot-message'), 500);  
 }
 
 function addMessage(text, className) {
