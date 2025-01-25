@@ -88,26 +88,6 @@ function addMessage(text, className) {
   chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 
-/*function displayChat(messages) {
-  let messageHtml = '';
-
-  messages.forEach((message) => {
-    messageHtml += `
-      <div class="message">
-        <div class="messagePrompt">
-          <span>${message.prompt}</span>
-        </div>
-        <div class="messageResponse">
-          <span>${message.response}</span>
-        </div>
-      </div>
-    `;
-
-  });
-
-  document.querySelector('.messages').innerHTML = messageHtml;
-};
-*/
 const toggleButton = document.getElementById('themeToggle');
 const body = document.body;
 
