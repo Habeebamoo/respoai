@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button container */
+.toggle-button {
+  position: relative;
+  width: 80px;  
+  height: 40px;
+  background: linear-gradient(45deg, #6e7fdb, #46b6ff);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider (the round knob) */
+.toggle-button:before {
+  content: '';
+  position: absolute;
+  top: 5px; 
+  left: 5px;    
+  width: 30px;  
+  height: 30px;  
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Active state styles */
+.toggle-button.active {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+.toggle-button.active:before {
+  transform: translateX(40px);
+}
+
+.light-theme {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2f2f2f;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.prompt-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2f2f2f;
+  padding: 10px;
+}
+
+.prompt-box {
+  max-width: 350px;
+  margin: 0 auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  width: 250px;
+  margin-right: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.send-button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.send-button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+}
+
+.send-button img {
+  width: 25px;
+  height: 25px;
+}
+
+.send-button:active {
+  transform: scale(0.95);
+}
+
+.text-logo {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+.text-logo span {
+  color: #007BFF;
+}
+
+.messages {
+  width: 600px;
+  height: 480px;
+  overflow: auto;
+}
+
+.message {
+  padding: 5px;
+}
+
+.messagePrompt {
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.messageResponse {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.messagePrompt span {
+  background-color: rgb(240, 233, 233);
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+.messageResponse span {
+  background-color: #81b5ec;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .messages {
+    width: 400px;
+  }
+}
+
