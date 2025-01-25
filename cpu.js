@@ -92,17 +92,20 @@ function addMessage(text, className) {
 
 const toggleButton = document.getElementById('themeToggle');
 const body = document.querySelector('.chat-container');
+const inputCont = document.querySelector('.input-container');
 
 function enableDarkMode() {
   console.log('Dark Mode Activated');
   body.classList.remove('light-theme');
   body.classList.add('dark-theme');
+  inputCont.classList.add('dark-theme);
 }
 
 function enableLightMode() {
   console.log('Light Mode Activated');
   body.classList.remove('dark-theme');
   body.classList.add('light-theme');
+  inputCont.classList.remove('dark-theme);
 }
 
 toggleButton.addEventListener('click', () => {
