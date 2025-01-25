@@ -26,7 +26,8 @@ function runCommand() {
   });
 
   if(numStatus) {
-    solve(prompt)
+    solve(prompt);
+    numStatus = false;
   } else {
     generateResponse(prompt)
   }
