@@ -72,16 +72,23 @@ body {
 
 .input-container button {
    padding: 10px 15px;
-   background-color: #075e54;
+   background-color: black;
    color: white;
    border: none;
    border-radius: 20px;
    cursor: pointer;
 }
 
-.input-container button:hover {
-   background-color: #054d44;
+.light-theme {
+  background-color: #f7f7f7;
+  color: #333;
 }
+
+.dark-theme {
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
 
 /* {
   margin: 0;
@@ -134,16 +141,6 @@ body {
 
 .toggle-button.active:before {
   transform: translateX(40px);
-}
-
-.light-theme {
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-.dark-theme {
-  background-color: #2f2f2f;
-  color: #fff;
 }
 
 .header {
