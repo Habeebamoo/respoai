@@ -17,7 +17,8 @@ const messages = JSON.parse(sessionStorage.getItem('messages')) || [];
 
 function runCommand() {
   const promptIn = document.querySelector('.prompt').value;
-  const prompt = promptIn.toLowerCase();
+  const promptTr = promptIn.toLowerCase();
+  const prompt = promptTr.trim();
 
   numbers.forEach((num) => {
     if(prompt.includes(num)) {
