@@ -58,7 +58,8 @@ function generateResponse(prompt) {
   const random = Math.floor(Math.random() * targetOutput.length);
   const response = targetOutput[random];
 
-  saveChat(prompt, response);
+  addMessage(prompt, response);
+  setTimeout(() => addMessage('Hello! How can I assist you?', 'bot-message'), 500);  
 }
 
 function solve(prompt) {
@@ -75,20 +76,19 @@ function solve(prompt) {
   });
 
   const result = eval(memory);
-  saveChat(prompt, ` The answer is ${result}`)
+  addMessage(prompt, ` The answer is ${result}`)
+  setTimeout(() => addMessage('Hello! How can I assist you?', 'bot-message'), 500);  
 }
 
-function saveChat(prompt, response) {
-  messages.push({
-    prompt,
-    response
-  });
+function addMessage(text, className) {
+  const messageDiv = document.createElement('div');
+  messageDiv.className = `message ${className}`;
+  messageDiv.textContent = text;
+  chatContainer.appendChild(messageDiv);
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+}
 
-  sessionStorage.setItem('messages', JSON.stringify(messages));
-  displayChat(messages);
-};
-
-function displayChat(messages) {
+/*function displayChat(messages) {
   let messageHtml = '';
 
   messages.forEach((message) => {
@@ -107,7 +107,7 @@ function displayChat(messages) {
 
   document.querySelector('.messages').innerHTML = messageHtml;
 };
-
+*/
 const toggleButton = document.getElementById('themeToggle');
 const body = document.body;
 
