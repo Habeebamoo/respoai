@@ -91,7 +91,7 @@ function addMessage(text, className) {
 }
 
 const toggleButton = document.getElementById('themeToggle');
-const body = document.body;
+const body = document.querySelector('.chat-container');
 
 function enableDarkMode() {
   console.log('Dark Mode Activated');
