@@ -98,14 +98,14 @@ function enableDarkMode() {
   console.log('Dark Mode Activated');
   body.classList.remove('light-theme');
   body.classList.add('dark-theme');
-  inputCont.classList.add('dark-theme);
+  inputCont.classList.add('dark-theme');
 }
 
 function enableLightMode() {
   console.log('Light Mode Activated');
   body.classList.remove('dark-theme');
   body.classList.add('light-theme');
-  inputCont.classList.remove('dark-theme);
+  inputCont.classList.remove('dark-theme');
 }
 
 toggleButton.addEventListener('click', () => {
