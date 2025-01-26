@@ -13,8 +13,6 @@ window.addEventListener('keypress', (event) => {
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '+', '-', '/', '*'];
 let numStatus = false;
 
-const messages = JSON.parse(sessionStorage.getItem('messages')) || [];
-
 function runCommand() {
   const promptIn = document.querySelector('.prompt').value;
   const promptTr = promptIn.toLowerCase();
