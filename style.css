@@ -75,6 +75,7 @@ body {
 
 .input-box {
    max-width: 400px;
+   background: red;
 }
 
 .input-container input {
