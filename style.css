@@ -134,7 +134,11 @@ body {
   transform: translateX(40px);
 }
 
-
+@media (max-width: 600px) {
+  .input-box {
+    width: 100%;
+  }
+}
 
 /* {
   margin: 0;
