@@ -68,13 +68,12 @@ body {
    display: flex;
    gap: 10px;
 
-   display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .input-box {
-   max-width: 400px;
+   width: 400px;
    background: red;
 }
 
@@ -136,10 +135,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .input-container {
-    display: block;
-  }
-  
   .input-box {
     width: 100%;
   }
