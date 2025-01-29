@@ -140,7 +140,7 @@ body {
 
 @media (max-width: 600px) {
   .input-box {
-    width: 100%;
+    width: auto;
   }
 }
 
