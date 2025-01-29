@@ -59,12 +59,8 @@ body {
   text-align: left;
 }
 
-.input-container {
-   background-color: #f0f0f0;
-   padding: 10px;
-   position: fixed;
-   bottom: 0;
-   width: 100%;
+.input-box {
+   width: 400px;
    display: flex;
    gap: 10px;
 
@@ -72,10 +68,16 @@ body {
    align-items: center;
 }
 
-.input-box {
-   width: 400px;
-   background: red;
+.input-container {
+   background-color: #f0f0f0;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
 }
+  
 
 .input-container input {
    flex: 1;
