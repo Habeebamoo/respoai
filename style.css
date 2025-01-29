@@ -67,6 +67,14 @@ body {
    width: 100%;
    display: flex;
    gap: 10px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.input-box {
+   max-width: 400px;
 }
 
 .input-container input {
