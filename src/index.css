@@ -2,9 +2,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('./fonts/RobotoCondensed-Bold.ttf') format('woff2');
+}
+
 body {
   padding: 0;
   margin: 0;
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+header nav {
+  border-radius: 20px;
+  font-family: 'Roboto Condensed';
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .input-container {
@@ -12,6 +24,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .input-box {
@@ -25,6 +38,10 @@ body {
 
 .input-box img {
   height: 30px;
+}
+
+.input-group {
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 600px) {
