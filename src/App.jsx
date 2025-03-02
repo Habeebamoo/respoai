@@ -7,6 +7,7 @@ import InputContainer from "./components/InputContainer";
 
 export default function App() {
   const messageSection = useRef(null);
+  const textArea = useRef(null);
   const [messages, setMessages] = useState([]);
   
   async function sendMessage(formData) {
@@ -33,6 +34,12 @@ export default function App() {
     )
   }, [messages])
   
+  const adjustHeight = () => {
+    const text = textArea.current;
+    text.style.height = "auto";
+    text.style.height = text.scrollHeight + "px";
+  }
+  
   const messagesDiv = messages.map(obj => {
     return (
       <div className={`${obj.sender}-content`}>
@@ -47,7 +54,7 @@ export default function App() {
       <div ref={messageSection} className="container mt-1 p-4 mb-5 messages">
         {messagesDiv}
       </div>
-      <InputContainer handleAction={sendMessage} />
+      <InputContainer ref={textArea} handleChange={adjustHeight} handleAction={sendMessage} />
     </main>
   )
 }

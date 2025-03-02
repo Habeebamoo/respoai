@@ -37,10 +37,14 @@ header nav {
 .input-box {
   width: 400px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 .input-box button {
   background-color: black;
+  margin-left: 5px;
 }
 
 .input-box img {
