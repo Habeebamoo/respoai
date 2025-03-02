@@ -1,12 +1,41 @@
-# React + Vite
+# **Respo AI**  
+Respo AI is an AI-powered chatbot built with **React**, **Bootstrap**, and the **Mistral AI Hugging Face API**. It provides intelligent and responsive conversations using cutting-edge AI models.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Respo AI Banner](your-banner-image-url)  
 
-Currently, two official plugins are available:
+## **Features**  
+✅ AI-powered chat responses  
+✅ Sleek and responsive UI with Bootstrap  
+✅ Fast and efficient with Vite  
+✅ Easy deployment and version control with Git  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Tech Stack**  
 
-## Expanding the ESLint configuration
+### **Frontend**  
+![React](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)  
+**React** – For building the chatbot interface.  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Bootstrap](https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg)  
+**Bootstrap** – For responsive and stylish UI components.  
+
+### **AI Model**  
+![Hugging Face](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)  
+**Mistral AI (Hugging Face API)** – Provides the AI-powered chat responses.  
+
+### **Production & Development Tools**  
+
+![Vite](https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg)  
+**Vite** – Fast build tool for development.  
+
+![Git](https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg)  
+**Git** – Version control for project collaboration.  
+
+![npm](https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg)  
+**npm** – Package manager for dependencies.  
+
+## **Installation & Setup**  
+
+1. Clone the repository:  
+   ```sh
+   git clone https://github.com/your-username/respo-ai.git
+   cd respo-ai
