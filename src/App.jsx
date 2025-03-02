@@ -44,7 +44,7 @@ export default function App() {
   return (
     <main>
       <Header />
-      <div ref={messageSection} className="container mt-1 p-4 mb-5">
+      <div ref={messageSection} className="container mt-1 p-4 mb-5 messages">
         {messagesDiv}
       </div>
       <InputContainer handleAction={sendMessage} />

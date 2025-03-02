@@ -7,6 +7,11 @@
   src: url('./fonts/RobotoCondensed-Bold.ttf') format('woff2');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/RobotoCondensed-Regular.ttf') format('woff2');
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -44,6 +49,10 @@ header nav {
 
 .input-group {
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.messages {
+  font-family: 'Roboto';
 }
 
 .user-content {
