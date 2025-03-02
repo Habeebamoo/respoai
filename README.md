@@ -1,8 +1,6 @@
 # **Respo AI**  
 Respo AI is an AI-powered chatbot built with **React**, **Bootstrap**, and the **Mistral AI Hugging Face API**. It provides intelligent and responsive conversations using cutting-edge AI models.  
 
-![Respo AI Banner](your-banner-image-url)  
-
 ## **Features**  
 ✅ AI-powered chat responses  
 ✅ Sleek and responsive UI with Bootstrap  
@@ -29,5 +27,5 @@ Respo AI is an AI-powered chatbot built with **React**, **Bootstrap**, and the *
 
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-username/respo-ai.git
-   cd respo-ai
+   git clone https://github.com/Habeebamoo/respoai.git
+   cd respoai
