@@ -10,7 +10,8 @@
 body {
   padding: 0;
   margin: 0;
-  background: rgba(0, 0, 0, 0.1) !important;
+  background: black !important;
+  opacity: 0.9;
 }
 
 header nav {
@@ -24,6 +25,7 @@ header nav {
   bottom: 0;
   left: 0;
   right: 0;
+  background: #333;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
@@ -33,7 +35,7 @@ header nav {
 }
 
 .input-box button {
-  background-color: #333;
+  background-color: black;
 }
 
 .input-box img {
@@ -42,6 +44,22 @@ header nav {
 
 .input-group {
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.user-content {
+  display: flex;
+  justify-content: end;
+}
+
+.user-content span {
+  background: #333;
+  color: white;
+  display: inline-block;
+}
+
+.bot-content span {
+  color: white;
+  display: inline-block;
 }
 
 @media (max-width: 600px) {
