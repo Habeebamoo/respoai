@@ -12,26 +12,18 @@ Respo AI is an AI-powered chatbot built with **React**, **Bootstrap**, and the *
 ## **Tech Stack**  
 
 ### **Frontend**  
-![React](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)  
-**React** – For building the chatbot interface.  
-
-![Bootstrap](https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg)  
-**Bootstrap** – For responsive and stylish UI components.  
-
-### **AI Model**  
-![Hugging Face](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)  
-**Mistral AI (Hugging Face API)** – Provides the AI-powered chat responses.  
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="50"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" width="50"/>
+  <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="50"/>
+</p>  
 
 ### **Production & Development Tools**  
-
-![Vite](https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg)  
-**Vite** – Fast build tool for development.  
-
-![Git](https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg)  
-**Git** – Version control for project collaboration.  
-
-![npm](https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg)  
-**npm** – Package manager for dependencies.  
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" alt="Vite" width="50"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" width="50"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg" alt="npm" width="50"/>
+</p>  
 
 ## **Installation & Setup**  
 
