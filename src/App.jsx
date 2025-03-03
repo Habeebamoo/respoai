@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import ReactMarkdown from "react-markdown";
 import Header from "./components/Header";
 import getReply from "./data/ai.js";
 import InputContainer from "./components/InputContainer";
@@ -43,7 +44,11 @@ export default function App() {
   const messagesDiv = messages.map(obj => {
     return (
       <div className={`${obj.sender}-content`}>
-        <span className="p-3 rounded mb-3">{obj.content}</span>
+        <span className="p-3 rounded mb-3">
+          <ReactMarkdown>
+            {obj.content}
+          </ReactMarkdown>
+        </span>
       </div>
     )
   })

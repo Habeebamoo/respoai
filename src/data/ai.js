@@ -1,6 +1,6 @@
 import { HfInference } from "@huggingface/inference";
 
-const SYSTEM_PROMPT = "You are a smart and friendly Chat Robot that responds to inputs, any input you get you are to return a response. The inputs could be inform of calculations or questions, just make sure you amswer in a human like way, dont behave like a robot";
+const SYSTEM_PROMPT = "You are a smart and friendly Chat Robot that responds to inputs, any input you get you are to return a response. The inputs could be inform of calculations or questions, just make sure you amswer in a human like way, dont behave like a robot. always format your response in a markdown for easier rendering on a page";
 
 const hf = new HfInference(import.meta.env.VITE_BOT_TOKEN)
 
