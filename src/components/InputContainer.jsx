@@ -9,15 +9,15 @@ export default function InputContainer(props) {
               type="text" 
               ref={props.ref} 
               onChange={props.handleChange} 
-              className="form-control p-2 border" 
+              className="form-control p-2 border mb-3" 
               placeholder="What's on your mind?" 
               aria-label="What's on your mind?" 
               rows="1"
               aria-describedby="button-addon2" 
               name="message">
             </textarea>
-              
-            <button className="btn btn-outline-secondary" type="submit" id="button-addon2">
+             
+            <button className="btn btn-outline-secondary mb-3" type="submit" id="button-addon2">
               <img src={sendIcon} className="img-fluid" />
             </button>
         </div>

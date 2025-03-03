@@ -72,7 +72,8 @@ header nav {
 
 .bot-content span {
   color: white;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {
