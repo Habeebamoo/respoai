@@ -11,11 +11,17 @@ export default function App() {
   const textArea = useRef(null);
   const [messages, setMessages] = useState([]);
   
-  async function sendMessage(formData) {
+  useEffect(() => {
+    messageSection.current.scrollIntoView(
+      {behavior: "smooth", block: "end"}
+    )
+  }, [messages])
+  
+  function sendMessage(formData) {
     const prompt = formData.get("message");
     setMessages(prev => [
       ...prev,
-      {sender: 'user', content: prompt}
+      {sender: 'user', content: prompt, markdown: false}
     ]);
     
     displayReply(prompt);
@@ -25,15 +31,9 @@ export default function App() {
     const reply = await getReply(prompt);
     setMessages(prev => [
       ...prev,
-      {sender: 'bot', content: reply}
+      {sender: 'bot', content: reply, markdown: true}
     ]);
   }
-  
-  useEffect(() => {
-    messageSection.current.scrollIntoView(
-      {behavior: "smooth", block: "end"}
-    )
-  }, [messages])
   
   const adjustHeight = () => {
     const text = textArea.current;
@@ -45,9 +45,14 @@ export default function App() {
     return (
       <div className={`${obj.sender}-content`}>
         <span className="p-3 rounded mb-3">
-          <ReactMarkdown>
-            {obj.content}
-          </ReactMarkdown>
+          {obj.markdown ? 
+            <ReactMarkdown>
+              {obj.content}
+            </ReactMarkdown>
+          : <>
+              {obj.content}
+            </>
+          }
         </span>
       </div>
     )
