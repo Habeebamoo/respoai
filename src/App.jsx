@@ -29,9 +29,11 @@ export default function App() {
   
   async function displayReply(prompt) {
     const reply = await getReply(prompt);
+    const isReply = reply ? reply : "Request limit exceeded. Please try again later";
+    
     setMessages(prev => [
       ...prev,
-      {sender: 'bot', content: reply, markdown: true}
+      {sender: 'bot', content: isReply, markdown: true}
     ]);
   }
   
