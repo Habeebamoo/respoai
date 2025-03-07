@@ -64,6 +64,11 @@ header nav {
   justify-content: end;
 }
 
+.bot-content {
+  display: flex;
+  justify-content: start;
+}
+
 .user-content span {
   background: #333;
   color: white;
