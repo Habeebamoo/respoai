@@ -67,6 +67,7 @@ header nav {
 .bot-content {
   display: flex;
   justify-content: start;
+  background: blue;
 }
 
 .user-content span {
@@ -76,6 +77,7 @@ header nav {
 }
 
 .bot-content span {
+  background: red;
   color: white;
   display: flex;
   flex-wrap: wrap;
