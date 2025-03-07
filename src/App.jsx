@@ -29,7 +29,7 @@ export default function App() {
   
   async function displayReply(prompt) {
     const reply = await getReply(prompt);
-    const isReply = reply ? reply : "Request limit exceeded. Please try again later";
+    const isReply = reply ? reply : "Monthly request limit exceeded. Please come back later";
     
     setMessages(prev => [
       ...prev,
