@@ -7,9 +7,9 @@ import getReply from "./data/ai.js";
 import InputContainer from "./components/InputContainer";
 
 export default function App() {
+  const [messages, setMessages] = useState([]);
   const messageSection = useRef(null);
   const textArea = useRef(null);
-  const [messages, setMessages] = useState([]);
   
   useEffect(() => {
     messageSection.current.scrollIntoView(
