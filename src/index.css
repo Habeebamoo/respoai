@@ -81,6 +81,7 @@ header nav {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 @media (max-width: 600px) {
