@@ -10,6 +10,7 @@ export default function App() {
   const [messages, setMessages] = useState([]);
   const messageSection = useRef(null);
   const textArea = useRef(null);
+  const text = textArea.current;
   
   useEffect(() => {
     messageSection.current.scrollIntoView(
@@ -25,6 +26,7 @@ export default function App() {
     ]);
     
     displayReply(prompt);
+    text.style.height = "auto";
   }
   
   async function displayReply(prompt) {
@@ -38,7 +40,6 @@ export default function App() {
   }
   
   const adjustHeight = () => {
-    const text = textArea.current;
     text.style.height = "auto";
     text.style.height = text.scrollHeight + "px";
   }
