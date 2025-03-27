@@ -75,7 +75,7 @@ header nav {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 @media (max-width: 600px) {
