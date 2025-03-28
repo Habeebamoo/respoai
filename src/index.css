@@ -32,6 +32,7 @@ header nav {
   right: 0;
   background: #333;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  bottom: env(safe-area-inset-bottom, 0);
 }
 
 .input-box {
