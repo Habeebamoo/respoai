@@ -9,7 +9,7 @@ interface PropsType {
 export default function InputContainer({ setPrompt, handleSubmit }: PropsType) {
   return (
     <>
-      <form onSubmit={handleSubmit} className="fixed bottom-0 left-0 right-0 py-3 bg-[#555] rounded-t-xl">
+      <form onSubmit={handleSubmit} className="fixed bottom-0 left-0 right-0 py-3 bg-[#444] rounded-t-xl">
         <div className="w-[95%] sm:w-[400px] mx-auto p-2 flex justify-between items-end">
             <textarea 
               onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setPrompt(e.target.value)} 
