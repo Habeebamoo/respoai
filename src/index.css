@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@import "tailwindcss";
 
 @font-face {
   font-family: 'Roboto Condensed';
@@ -12,75 +10,24 @@
   src: url('./fonts/RobotoCondensed-Regular.ttf') format('woff2');
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background: black !important;
-  opacity: 0.9;
-}
-
-header nav {
-  border-radius: 20px;
-  font-family: 'Roboto Condensed';
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-.input-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #333;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  bottom: env(safe-area-inset-bottom, 0);
-}
-
-.input-box {
-  width: 400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-
-.input-box button {
-  background-color: black;
-  margin-left: 5px;
-}
-
-.input-box img {
-  height: 30px;
-}
-
-.input-group {
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-.messages {
-  font-family: 'Roboto';
-}
-
-.user-content {
-  display: flex;
-  justify-content: end;
-}
-
-.user-content span {
-  background: #333;
-  color: white;
-  display: inline-block;
-  max-width: 80%;
-}
-
-.bot-content span {
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 95%;
-}
-
-@media (max-width: 600px) {
-  .input-box {
-    width: 100%;
+@layer component {
+  .user-content {
+    @apply flex justify-end text-white
   }
+
+  .user-content span {
+    @apply bg-[#555] max-w-[70%]
+  }
+
+  .bot-content {
+    @apply flex justify-start text-white
+  }
+
+  .bot-content span {
+    @apply w-[80%]
+  }
+}
+
+@theme {
+  --color-dark: #333;
 }

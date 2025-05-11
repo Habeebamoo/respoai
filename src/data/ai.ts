@@ -4,7 +4,7 @@ const SYSTEM_PROMPT = "You are a smart and friendly Chat Robot that responds to 
 
 const hf = new HfInference(import.meta.env.VITE_BOT_TOKEN)
 
-export default async function getReply(prompt) {
+export default async function getReply(prompt: string) {
   try {
     const response = await hf.chatCompletion({
       model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
