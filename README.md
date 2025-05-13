@@ -4,7 +4,6 @@ Respo AI is an AI-powered chatbot built with **React**, **TailwindCSS**, and the
 ## **Features**  
 ✅ AI-powered chat responses  
 ✅ Sleek and responsive UI with Tailwind
-
 ✅ Fast and efficient with Vite  
 ✅ Easy deployment and version control with Git  
 
