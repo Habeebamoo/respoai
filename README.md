@@ -1,9 +1,9 @@
 # **Respo AI**  
-Respo AI is an AI-powered chatbot built with **React**, **Bootstrap**, and the **Mistral AI Hugging Face API**. It provides intelligent and responsive conversations using cutting-edge AI models.  
+Respo AI is an AI-powered chatbot built with **React**, **TailwindCSS**, and the **Mistral AI Hugging Face API**. It provides intelligent and responsive conversations using cutting-edge AI models.  
 
 ## **Features**  
 ✅ AI-powered chat responses  
-✅ Sleek and responsive UI with Bootstrap  
+✅ Sleek and responsive UI with Tailwind
 ✅ Fast and efficient with Vite  
 ✅ Easy deployment and version control with Git  
 
