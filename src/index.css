@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: 'Roboto Condensed';
   src: url('./fonts/RobotoCondensed-Bold.ttf') format('woff2');
@@ -10,17 +12,21 @@
   src: url('./fonts/RobotoCondensed-Regular.ttf') format('woff2');
 }
 
+.dark body {
+  background-color: #333;
+}
+
 @layer component {
   .user-content {
-    @apply flex justify-end text-white
+    @apply flex justify-end dark:text-white
   }
 
   .user-content span {
-    @apply bg-[#555] max-w-[70%]
+    @apply dark:bg-[#555] bg-accent max-w-[70%]
   }
 
   .bot-content {
-    @apply flex justify-start text-white
+    @apply flex justify-start dark:text-white
   }
 
   .bot-content span {
@@ -28,6 +34,11 @@
   }
 }
 
+.test {
+  color: rgb(207, 204, 204);
+}
+
 @theme {
-  --color-dark: #333;
+  --color-accent: rgb(200, 200, 200);
+  --color-choco: #333;
 }

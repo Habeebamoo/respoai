@@ -64,7 +64,7 @@ const App = () => {
       <div ref={messageSection} className="mt-[60px] p-4 mb-[50px] sm:w-[90%] mx-auto">
         {messagesDiv}
       </div>
-      <InputContainer setPrompt={setPrompt} handleSubmit={sendMessage} />
+      <InputContainer prompt={prompt} setPrompt={setPrompt} handleSubmit={sendMessage} />
     </main>
   )
 }
