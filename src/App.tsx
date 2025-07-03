@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ReactMarkdown from "react-markdown";
 import Header from "./components/Header";
 import getReply from "./data/ai";
@@ -34,11 +32,11 @@ const App = () => {
   }
   
   const displayReply = async(prompt: string) => {
+    setPrompt("")
     const reply = await getReply(prompt);
     const isReply = reply ? reply : "**Monthly request limit exceeded.** Please come back later.";
     
     setMessages(prev => [...prev, {sender: 'bot', content: isReply, markdown: true}]);
-    setPrompt("")
   }
   
   const messagesDiv = messages.map(obj => {
