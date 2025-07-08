@@ -10,7 +10,6 @@ Respo AI is an AI-powered chatbot built with **React**, **TailwindCSS**, and the
 
 ## **Tech Stack**  
 
-### **Frontend**  
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="50"/>
   <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="50"/>
