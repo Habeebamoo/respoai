@@ -22,7 +22,7 @@
   }
 
   .user-content span {
-    @apply dark:bg-[#555] bg-accent max-w-[70%]
+    @apply dark:bg-[#555] bg-accent max-w-[70%] rounded-md;
   }
 
   .bot-content {
